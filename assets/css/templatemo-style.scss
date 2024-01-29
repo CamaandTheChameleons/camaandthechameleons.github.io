@@ -1,0 +1,370 @@
+/*
+
+Reflux Template - edited
+
+https://templatemo.com/tm-531-reflux
+
+*/
+
+@import url(fontawesome.css);
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#page-wraper {
+    background: url(../images/page-bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+}
+
+:root {
+    --main: #1f8153;
+    --primary: #197a4d;
+    --hoover:rgba(173, 255, 207, 0.5);
+    --active: #caffd3;
+    --text-primary: #caffd3 ;
+    --text-active: var(--primary);
+    --devider: rgba(250, 250, 250, 0.1);
+}
+
+
+/* Basic */
+
+body {
+    overflow-x: hidden;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--text-primary);
+}
+
+h4 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: 0.25px;
+}
+
+img {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.image-round img{
+    border-radius: 50%;
+    max-width: 200px;
+    margin: 10px;
+    aspect-ratio: 1/1;
+}
+
+.video{
+    margin: 30px 0 20px 0;
+    max-width: 100%;
+    width: 560px;
+    height: 315px;
+}
+
+
+/* Section */
+
+.section {
+    color: #fff;
+    width: 60%;
+    right: 10%;
+    left: 30%;
+    position: relative;
+    min-height: 100vh;
+    padding: 0 3%;
+    padding-bottom: 80px;
+    border-bottom: 3px solid rgba(250, 250, 250, 0.25);
+}
+
+.section-heading {
+    text-align: center;
+    padding: 80px 45px 25px 45px;
+
+    h2 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .line-dec {
+        width: 60px;
+        height: 3px;
+        background-color: var(--main);
+        margin: 10px auto;
+    }
+
+    span {
+        margin-top: 5px;
+        font-size: 18px;
+        color: #fff;
+        letter-spacing: 0.5px;
+        display: block;
+    }
+
+}
+
+/* Buttons */
+
+.white-button {
+    a {
+        display: inline-block;
+        padding: 12px 20px;
+        background-color: #fff;
+        color: var(--main);
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        transition: all 0.5s;
+
+        &:hover {
+            background-color: var(--main);
+            color: #fff;
+        }
+    }
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: var(--main);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        outline: none;
+        background-color: var(--main);
+        color: #fff;
+    }
+}
+
+/* My Work */
+
+.isotope-wrapper {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.isotope-toolbar input[type="radio"] {
+    display: none;
+}
+
+.isotope-toolbar span {
+    text-transform: capitalize;
+    display: inline-block;
+    margin-right: 15px;
+    padding-bottom: 3px;
+    font-size: 15px;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+    transform: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+.isotope-toolbar input[type="radio"]:checked + span {
+    color: var(--main);
+    border-bottom: 2px solid var(--main);
+}
+
+.isotope-box {
+    position: relative;
+    width: 100%;
+}
+
+.isotope-toolbar {
+    text-align: center;
+    margin: 10px;
+}
+
+.isotope-toolbar p {
+    border-top: 1px solid #fff;
+    padding-top: 15px;
+}
+
+.isotope-toolbar a {
+    color: #fff;
+}
+
+.isotope-item {
+    position: relative;
+    width: 48%;
+    margin: 1%;
+    border-bottom: 2px solid rgba(250,250,250,0.1);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.isotope-item img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.lazyload {
+    background: #f7f7f7;
+}
+
+.lazyloading {
+    background: #f7f7f7 url(//afarkas.github.io/lazysizes/assets/imgs/loader.gif) no-repeat center;
+    min-height: 60px;
+}
+
+/*Anina*/
+
+.text-left{
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+.ul-left{
+    text-align: left;
+    list-style: circle;
+    font-size: 18px;
+}
+
+.ul-left li{
+    display: list-item;
+}
+
+
+@media screen and (max-width: 1680px) {
+
+    .section {
+        color: #fff;
+        width: 65%;
+        right: 5%;
+        left: 30%;
+    }
+}
+
+
+@media screen and (max-width: 1280px) {
+
+    .right-image-post h4,
+    .left-image-post h4 {
+        margin-top: 0px;
+    }
+
+    .right-image-post p,
+    .left-image-post p {
+        margin-top: 15px;
+    }
+
+    .right-image-post .white-button,
+    .left-image-post .white-button {
+        margin-top: 25px;
+    }
+
+}
+
+/* .menu .container {
+    padding-left: 0;
+    padding-right: 0;
+} */
+
+@media screen and (max-width: 845px) {
+
+    .responsive-nav {
+        display: inline-block;
+    }
+    .section {
+        width: 94%;
+        right: 3%;
+        left: 3%;
+    }
+    .isotope-item {
+        width: 94%;
+        margin: 3%;
+    }
+    .left-image-post img {
+        margin-bottom: 30px;
+    }
+    .right-image-post img {
+        margin-top: 30px;
+    }
+    .isotope-item {
+        border-bottom: none;
+        text-align: center;
+    }
+    .isotope-toolbar {
+        margin-bottom: 20px;
+    }
+
+    .section-heading{
+        padding: 80px 0 25px 0;
+    }
+
+}

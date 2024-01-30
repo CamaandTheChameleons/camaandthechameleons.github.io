@@ -144,20 +144,31 @@ html {
     text-align: center;
     padding: 80px 45px 25px 45px;
 }
-.section-heading h2 {
+.kontakt{
+    padding-top: 80px;;
+}
+.section-heading h2, 
+.kontakt h2 {
     font-size: 32px;
     font-weight: 700;
     color: #fff;
 }
 
-.section-heading .line-dec {
+.section-heading .line-dec, 
+.kontakt .line-dec {
     width: 60px;
     height: 3px;
     background-color: var(--main);
     margin: 10px auto;
 }
 
-.section-heading span {
+.kontakt .line-dec{
+    margin: 10px 0;
+}
+
+
+.section-heading span, 
+.kontakt span {
     margin-top: 5px;
     font-size: 18px;
     color: #fff;

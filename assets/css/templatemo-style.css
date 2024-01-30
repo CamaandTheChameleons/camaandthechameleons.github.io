@@ -142,49 +142,45 @@ html {
 .section-heading {
     text-align: center;
     padding: 80px 45px 25px 45px;
+}
+.section-heading h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
 
-    h2 {
-        font-size: 32px;
-        font-weight: 700;
-        color: #fff;
-    }
+.section-heading .line-dec {
+    width: 60px;
+    height: 3px;
+    background-color: var(--main);
+    margin: 10px auto;
+}
 
-    .line-dec {
-        width: 60px;
-        height: 3px;
-        background-color: var(--main);
-        margin: 10px auto;
-    }
-
-    span {
-        margin-top: 5px;
-        font-size: 18px;
-        color: #fff;
-        letter-spacing: 0.5px;
-        display: block;
-    }
-
+.section-heading span {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 0.5px;
+    display: block;
 }
 
 /* Buttons */
 
-.white-button {
-    a {
-        display: inline-block;
-        padding: 12px 20px;
-        background-color: #fff;
-        color: var(--main);
-        font-size: 13px;
-        font-weight: 800;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
-        transition: all 0.5s;
-
-        &:hover {
-            background-color: var(--main);
-            color: #fff;
-        }
-    }
+.white-button a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #fff;
+    color: var(--main);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+ 
+.white-button a:hover {
+    background-color: var(--main);
+    color: #fff;
 }
 
 button {
@@ -200,12 +196,12 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
+}
 
-    &:hover {
-        outline: none;
-        background-color: var(--main);
-        color: #fff;
-    }
+button:hover {
+    outline: none;
+    background-color: var(--main);
+    color: #fff;
 }
 
 /* My Work */

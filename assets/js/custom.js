@@ -4,6 +4,7 @@
   var close = document.getElementById("menu-close");
 
   toggle.addEventListener("click", function(e) {
+    e.stopPropagation();
     if (menu.classList.contains("open")) {
       menu.classList.remove("open");
     } else {
@@ -15,12 +16,21 @@
     menu.classList.remove("open");
   });
 
-  // Close menu after click on smaller screens
-  $(window).on("resize", function() {
+  menu.addEventListener("click", function(e) {
+    e.stopPropagation();
     if ($(window).width() < 846) {
       $(".main-menu a").on("click", function() {
         menu.classList.remove("open");
       });
+    }
+  });
+
+
+  // Close menu after click on smaller screens
+  $(window).click(function() {
+    //Hide the menus if visible
+    if ($(window).width() < 846) { 
+        menu.classList.remove("open");
     }
   });
 

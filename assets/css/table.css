@@ -1,0 +1,25 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .year{
+    background-color: var(--main);
+
+  }
+
+  @media (max-width: 600px) {
+    table {
+      overflow-x: auto;
+    }
+  }
